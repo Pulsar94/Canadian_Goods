@@ -1,0 +1,14 @@
+html{
+    background-color: grey;
+    color: white;
+    font-family: 'Franklin Gothic Medium';   
+}
+header,footer{
+    text-align: center;
+}
+#lien{
+    border: 1px solid;
+    border-color: white;
+    background-color: grey;
+    color:purple;
+}
