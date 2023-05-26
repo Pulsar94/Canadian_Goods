@@ -10,13 +10,17 @@ header,footer,h2{
     background-size: cover;
     background-repeat: no-repeat;*/
 }
-#lien{
+
+/*------------------------CSS pour le footer------------------------*/
+#lien{ 
     border: 1px solid;
     border-color: white;
     background-color: rgb(253, 253, 253);
     color:purple;
 }
+/*-----------------------------------------------------*/
 
+/*------------------------------CSS pour le formulaire------------------------------*/
 #contenu{
     text-align: center;
     margin-left: 10%;
@@ -30,9 +34,124 @@ header,footer,h2{
     margin:auto;
     align-items: space-between;
 }
+
 legend{
     font-size: large;
 }
+/*----------------------------------------------------------------------------------*/
+
+
+/*------------------------------CSS pour le tableau généré du formulaire------------------------------*/
+
+.btn_ligne {
+    display: flex;
+    align-items: center;
+    color: #000;
+    background: none;
+    border: none;
+    padding: 12px 18px;
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: monospace;
+    transition: linear .3s;
+  }
+  
+  .btn_ligne:hover {
+    color: #d60606;
+  }
+  
+  .btn_ligne::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(calc(100% + 4px));
+    width: 45px;
+    height: 45px;
+    background-color: #dc143c;
+    border-radius: 50px;
+    transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+    z-index: -1;
+  }
+  
+  .btn_ligne:hover::before {
+    width: 100%;
+    transform: translateY(-50%) translateX(-18px);
+    transition: transform .25s cubic-bezier(0,0,.5,2);
+  }
+
+/*----*/
+
+table {
+    table-layout:fixed;    
+  }
+  
+td {
+      word-wrap:break-word;
+}
+  
+table.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 200%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+}
+table.blueTable tbody td {
+    font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+    background: #D0E4F5;
+}
+table.blueTable thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+    border-left: none;
+}
+  
+table.blueTable tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+}
+table.blueTable tfoot td {
+    font-size: 14px;
+}
+table.blueTable tfoot .links {
+    text-align: right;
+}
+table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*------------------------------CSS pour les boutons ajouter et supprimer du formulaire------------------------------*/
 .btn {
     --color: #00A97F;
     --color2: rgb(10, 25, 30);
@@ -46,7 +165,7 @@ legend{
     cursor: pointer;
     z-index: 1;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 11px;
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
@@ -88,3 +207,4 @@ legend{
     filter: brightness(.7);
     transform: scale(.98);
    }
+/*-------------------------------------------------------------------------------------------------------------------*/
