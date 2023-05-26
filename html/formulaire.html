@@ -41,7 +41,7 @@
                 <fieldset>
                     <legend>Adresse</legend>
                     <label for="num">Numéro</label>
-                    <input type="number" name="num" id="num">
+                    <input type="number" name="num" id="num"  min=1 max=9999>
                     <label for="rue">Rue/Avenue</label>
                     <input type="text" name="rue" id="rue">
                     <label for="cp">Code Postal</label>
@@ -64,17 +64,17 @@
                 </fieldset>
                 <fieldset>
                     <legend>Ajouter à votre liste</legend>
-                    <input class="btn" type="submit" value="Ajouter" onclick="ajout()">
+                    <button class="btn" type="submit" value="Ajouter" onclick="ajout()">Ajouter</button>
                     <label for="note"><br>Ligne à supprimer :</label>
-                    <l> 0=tout, 1=1ère ligne,... </l>
+                    0=tout, 1=1ère ligne,...
                     <input type="number" name="ligne" min=0 value=1 id="lign">
-                    <input class="btn" type="reset" value="Supprimer" onclick="supprimer(ligne.value)">
+                    <button class="btn" type="reset" value="Supprimer" onclick="supprimer(ligne.value)">Supprimer</button>
                 </fieldset> 
             </form>
         </section>
         
         <main>
-            <table id="tabi">
+            <table id="tabi" class="blueTable">
               <caption><h2>Ton formulaire</h2></caption>
               <thead id="tab">
                   <tr>
@@ -85,6 +85,7 @@
                       <th>Code Postal</th>
                       <th>Par qui</th>
                       <th>Note</th>
+                      <th>Supprimer</th>
                   </tr>
               </thead>
             </table>
