@@ -15,7 +15,7 @@
     </header>
     <body>
         <h2>Remplissez le formulaire !</h2>
-        <section>
+        <section id="contenu">
             <form method="post" name="formu" id="form" action="#" class="box"  onsubmit="return false">
                 <fieldset>
                     <legend>Vous êtes ? </legend>
@@ -64,15 +64,19 @@
                 </fieldset>
                 <fieldset>
                     <legend>Ajouter à votre liste</legend>
-                    <input class="bouton" type="submit" value="Ajouter" onclick="ajout()">
+                    <input class="btn" type="submit" value="Ajouter" onclick="ajout()">
+                    <label for="note"><br>Ligne à supprimer :</label>
+                    <l> 0=tout, 1=1ère ligne,... </l>
+                    <input type="number" name="ligne" min=0 value=1 id="lign">
+                    <input class="btn" type="reset" value="Supprimer" onclick="supprimer(ligne.value)">
                 </fieldset> 
             </form>
         </section>
         
         <main>
-            <table id="tab">
-              <caption>Ton formulaire</caption>
-              <thead>
+            <table id="tabi">
+              <caption><h2>Ton formulaire</h2></caption>
+              <thead id="tab">
                   <tr>
                       <th>Vous</th>
                       <th>Type</th>

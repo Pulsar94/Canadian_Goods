@@ -74,3 +74,19 @@ function ajout(){
     var monTableau= document.getElementById("tab");
     monTableau.appendChild(newline);
 }
+
+function supprimer(ligne){
+    var monTableau= document.getElementById("tab");
+    if (confirm("Confirmez-vous la suppression de tous les bons plans générés ?")){
+        if (ligne==0){
+            while(monTableau.rows[1]!=undefined){
+                monTableau.removeChild(monTableau.rows[1]);
+            }
+        }
+        else{
+            if (monTableau.rows[ligne]!=undefined){
+                monTableau.removeChild(monTableau.rows[ligne]);
+            }
+        }
+    }
+}
