@@ -65,16 +65,14 @@
                 <fieldset>
                     <legend>Ajouter à votre liste</legend>
                     <button class="btn" type="submit" value="Ajouter" onclick="ajout()">Ajouter</button>
-                    <label for="note"><br>Ligne à supprimer :</label>
-                    0=tout, 1=1ère ligne,...
-                    <input type="number" name="ligne" min=0 value=1 id="lign">
-                    <button class="btn" type="reset" value="Supprimer" onclick="supprimer(ligne.value)">Supprimer</button>
+                    <label for="note"><br>Tout supprimer :</label>
+                    <button class="btn" type="reset" value="Supprimer" onclick="supprimer(0)">Supprimer</button>
                 </fieldset> 
             </form>
         </section>
         
         <main>
-            <table id="tabi" class="blueTable">
+            <table id="tabi" class="Table">
               <caption><h2>Ton formulaire</h2></caption>
               <thead id="tab">
                   <tr>
@@ -85,7 +83,7 @@
                       <th>Code Postal</th>
                       <th>Par qui</th>
                       <th>Note</th>
-                      <th>Supprimer</th>
+                      <th>Supprimer</th>                      
                   </tr>
               </thead>
             </table>

@@ -1,3 +1,4 @@
+cpt=1;
 function ajout(){
     var monformulaire=document.forms.formu;
     var col1= document.createElement("td");
@@ -7,7 +8,7 @@ function ajout(){
     var col5= document.createElement("td");
     var col6= document.createElement("td");
     var col7= document.createElement("td");
-    var col8= document.createElement("td");
+    var col9= document.createElement("td");
     var newline= document.createElement("tr");   
     var etud="";
     var type=document.getElementById("type_").value;
@@ -70,13 +71,19 @@ function ajout(){
     col5.textContent=postal;
     col6.textContent=ou;
     col7.textContent=note;
+    col9.textContent=cpt;
+    cpt+=1;
+
     let bouton=document.createElement("button");
-    bouton.innerText="suppr";
+    bouton.textContent="suppr";
     bouton.classList.add("btn_ligne");
-    bouton.addEventListener(onclick,suppr());
-    newline.append(col1,col2,col3,col4,col5,col6,col7,bouton);
+    bouton.addEventListener("click",suppr,false);
+    
     var monTableau= document.getElementById("tab");
+    newline.append(col1,col2,col3,col4,col5,col6,col7,bouton);
     monTableau.appendChild(newline);
+    bouton.grandparent=monTableau;
+    bouton.parent=newline;
 }
 
 function supprimer(ligne){
@@ -87,17 +94,10 @@ function supprimer(ligne){
                 monTableau.removeChild(monTableau.rows[1]);
             }
         }
-        else{
-            if (monTableau.rows[ligne]!=undefined){
-                monTableau.removeChild(monTableau.rows[ligne]);
-            }
-        }
     }
 }
 
-function suppr(){
-    var monTableau= document.getElementById("tab");
-    if (monTableau.rows!=undefined){
-        monTableau.removeChild(monTableau.rows[1]);
-    }
+function suppr(target){
+    var bout=target.target;
+    bout.grandparent.removeChild(bout.parent);
 }
