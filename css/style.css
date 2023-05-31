@@ -1,16 +1,23 @@
 html{
     background-color: grey;
-    color: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium';   
 }
 
-header,footer{
+header{
     text-align: center;
     background-color: red;
     background-image: url(../img/Canada-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 35%;
+}
+
+footer{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin:0;
 }
 
 h2{
@@ -22,16 +29,20 @@ body,h1{
     margin: 0%;
 }
 
+.prix{
+    text-align: center;
+}
+
 /*------------------------CSS pour la navigation entre les pages et lien cliquable------------------------*/
 
 #lien{ 
     border: transparent;
     background-color: grey;
-    color:purple;
+    color:rgb(177, 3, 177);
 }
 
 #foot{
-    color: rgb(239, 118, 74);
+    color: rgb(233, 114, 71);
     border: transparent;
     background-color: grey;
 }
@@ -43,7 +54,15 @@ body,h1{
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-    color: rgb(136, 38, 38);
+    color: black;
+    border:1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(157, 71, 71);
 }
 #tabi{
     text-align: center;
@@ -51,11 +70,18 @@ body,h1{
     font-size: medium;
     margin:auto;
     align-items: space-between;
+    
+}
+
+#case{
+    border-color: black;
 }
 
 legend{
     font-size: large;
 }
+
+
 /*----------------------------------------------------------------------------------*/
 
 /*------------------------------CSS pour le tableau généré du formulaire------------------------------*/
@@ -73,11 +99,15 @@ legend{
 }
 
 .Table tr:nth-child(even) {
-    background: #D0E4F5;
+    background: rgb(205, 205, 205);
+}
+
+.Table tr:first-child{
+    background-color: rgb(118, 48, 48);
 }
 
 .Table thead {
-    background: #1C6EA4;
+    background: #980606cc;
     border-bottom: 2px solid #444444;
     font-size: 15px;
     color: black;
