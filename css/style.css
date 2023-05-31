@@ -7,14 +7,19 @@ html{
 header,footer{
     text-align: center;
     background-color: red;
-    background-image: url(../img/drapeau.png);
+    background-image: url(../img/Canada-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0% 35%;
 }
 
 h2{
     text-decoration: underline;
     text-align: center;
+}
+
+body,h1{
+    margin: 0%;
 }
 
 /*------------------------CSS pour la navigation entre les pages et lien cliquable------------------------*/
