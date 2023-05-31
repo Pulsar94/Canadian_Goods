@@ -13,6 +13,10 @@ header,footer{
     background-position: 0% 35%;
 }
 
+header{
+    margin-bottom: 1%;
+}
+
 h2{
     text-decoration: underline;
     text-align: center;
@@ -110,3 +114,17 @@ legend{
 }
    
 /*-------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------CSS pour page accueil------------------------*/
+
+#info_presentation{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#info_gene{
+    border-collapse: collapse;
+    border-radius: 30px;
+}
+/*---------------------------------------------------------------------*/
