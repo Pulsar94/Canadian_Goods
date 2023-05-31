@@ -75,7 +75,7 @@ function ajout(){
     cpt+=1;
 
     let bouton=document.createElement("button");
-    bouton.textContent="suppr";
+    bouton.textContent="La ligne";
     bouton.classList.add("btn_ligne");
     bouton.addEventListener("click",suppr,false);
     

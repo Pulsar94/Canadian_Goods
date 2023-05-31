@@ -1,25 +1,37 @@
 html{
     background-color: grey;
-    color: white;
+    color: rgb(1, 1, 1);
     font-family: 'Franklin Gothic Medium';   
 }
 
-header,footer,h2{
+header,footer{
     text-align: center;
-    /*background-color: red;
+    background-color: red;
     background-image: url(../img/drapeau.png);
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 }
 
-/*------------------------CSS pour le footer------------------------*/
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*------------------------CSS pour la navigation entre les pages et lien cliquable------------------------*/
+
 #lien{ 
-    border: 1px solid;
-    border-color: white;
-    background-color: rgb(253, 253, 253);
+    border: transparent;
+    background-color: grey;
     color:purple;
 }
-/*-----------------------------------------------------*/
+
+#foot{
+    color: rgb(239, 118, 74);
+    border: transparent;
+    background-color: grey;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
 
 /*------------------------------CSS pour le formulaire------------------------------*/
 #contenu{
@@ -40,7 +52,6 @@ legend{
     font-size: large;
 }
 /*----------------------------------------------------------------------------------*/
-
 
 /*------------------------------CSS pour le tableau généré du formulaire------------------------------*/
 
@@ -72,8 +83,25 @@ legend{
 
 /*------------------------------CSS pour les boutons ajouter et supprimer du formulaire------------------------------*/
 
-/* .btn {
-    
-   } */
+.btn_ajout {
+    background-color: green;
+    color : white;
+    border:grey;
+    font-weight: bold;
+   }
+
+.btn_suppr{
+    background-color: red;
+    color : white;
+    border: grey;
+    font-weight: bold;
+}
+
+.btn_ligne{
+    background-color: orange;
+    color : white;
+    border: black;
+    font-weight: bold;
+}
    
 /*-------------------------------------------------------------------------------------------------------------------*/
