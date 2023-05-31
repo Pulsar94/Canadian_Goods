@@ -29,9 +29,18 @@ body,h1{
     margin: 0%;
 }
 
+.act{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    margin-left: 30%;
+}
+
 .prix{
     text-align: center;
 }
+
+/*activité*/
 
 /*------------------------CSS pour la navigation entre les pages et lien cliquable------------------------*/
 
