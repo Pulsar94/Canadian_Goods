@@ -16,6 +16,7 @@ header, footer{
 
 footer{
     text-align: center;
+    position: fixed;
     bottom: 0;
     width: 100%;
     margin:0;
@@ -159,6 +160,7 @@ legend{
 
 #info_presentation{
     text-align: center;
+    color: rgb(248, 248, 248);
     
 }
 
@@ -169,23 +171,36 @@ legend{
     border-radius: 30px;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: rgb(255, 255, 255);
+    margin-bottom: 1%;
+    background-color: rgb(214, 140, 140);
 }
 
 /*---------------------------------------------------------------------*/
 
 /*------------------------Navigation entre les pages et lien cliquable------------------------*/
 
-#lien{ 
-    border: transparent;
-    background-color: grey;
+#lien a{ 
+    border: solid 1px black;
+    background-color: rgb(86, 199, 120);
     color:rgb(177, 3, 177);
+    transition: all 1s;
 }
 
-#foot{
-    color: rgb(233, 114, 71);
-    border: transparent;
-    background-color: grey;
+#lien :hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#foot a{
+    border: solid 1px black;
+    color: rgb(226, 95, 47);
+    background-color: rgb(86, 199, 120);
+    transition: all 1s;
+}
+
+#foot :hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 /*--------------------------------------------------------------------------------------------*/
