@@ -158,13 +158,13 @@ legend{
 
 /*------------------------CSS pour page accueil------------------------*/
 
-#info_presentation{
+#info_presentation, #apropos{
     text-align: center;
     color: rgb(248, 248, 248);
     
 }
 
-#info_gene{
+#info_gene, #info_propos{
     text-align: center;
     border: 1px solid transparent;
     border-color: black;
