@@ -11,6 +11,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 35%;
+    margin-bottom: 1%;
 }
 
 footer{
@@ -152,11 +153,26 @@ legend{
     font-weight: bold;
 }
    
-/*----------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
 
+/*------------------------CSS pour page accueil------------------------*/
 
-/*-------------------------------------------------------------------------*/
+#info_presentation{
+    text-align: center;
+    
+}
 
+#info_gene{
+    text-align: center;
+    border: 1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+/*---------------------------------------------------------------------*/
 
 /*------------------------Navigation entre les pages et lien cliquable------------------------*/
 
@@ -173,3 +189,4 @@ legend{
 }
 
 /*--------------------------------------------------------------------------------------------*/
+
