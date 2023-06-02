@@ -26,7 +26,7 @@
         <h2>Remplissez le formulaire !</h2>
         <section id="contenu">
             <form method="post" name="formu" id="form" action="#" class="box"  onsubmit="return false">
-                <fieldset>
+                <fieldset id="case">
                     <legend>Vous êtes ? </legend>
                     <input type="checkbox" name="al3" id="al3">
                     <label for="al3">Ancien L3 étant allé à Montréal</label>
@@ -38,7 +38,7 @@
                     <label for="vac">Parti en vacances à Montréal</label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="case">
                     <legend>Type de bon plan</legend>
                     <label for="type">Type</label>
                     <select id="type_">
@@ -50,7 +50,7 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="case">
                     <legend>Adresse</legend>
                     <label for="num">Numéro</label>
                     <input type="number" name="num" id="num"  min=1 max=9999>
@@ -60,7 +60,7 @@
                     <input type="number" value=11290  max=100000 min=1 name="cp" id="cp">
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="case">
                     <legend>D'où connaissez-vous ?</legend>
                     <label for="aller">Proposition</label>
                     <select id="qui">
@@ -72,13 +72,13 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="case">
                     <legend>Combien vous mettez ?</legend>
                     <label for="note">Note sur 10</label>
                     <input type="number" name="notes" min=0 max=10 value=10 id="notes">
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="case">
                     <legend>Ajouter à votre liste</legend>
                     <button class="btn_ajout" type="submit" value="Ajouter" onclick="ajout()">Ajouter</button>
                     <label for="note"><br>Tout supprimer :</label>
@@ -91,7 +91,7 @@
         
         <section>
             <table id="tabi" class="Table">
-              <caption><h2>Ton formulaire</h2></caption>
+              <h2>Ton formulaire</h2>
               <thead id="tab">
                   <tr>
                       <th>Vous</th>
@@ -118,5 +118,5 @@
         </footer>
 
     </body>
-    
+
 </html>
