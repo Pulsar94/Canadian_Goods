@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Formulaire Canadian Goods </title>
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="../js/script.js"></script>
+    </head>
+
+    <header>
+        <h1>Ajouter quelque chose ?</h1>
+        <div>
+            N'hésite pas à ajouter des adresses qui sont pour toi essntielles !!
+        </div>
+
+        <a href="./accueil.html" id="lien">Accueil</a>
+        <a href="./a_propos.html" id="lien">A propos</a>
+        <a href="./bar.html" id="lien">Bars</a>
+        <a href="./restaurant.html" id="lien">Restaurants</a>
+        <a href="./activite.html" id="lien">Activités</a>
+        <a href="./formulaire.html" id="lien">Formulaire</a>
+    </header>
+
+    <body>
+        <h2>Remplissez le formulaire !</h2>
+        <section id="contenu">
+            <form method="post" name="formu" id="form" action="#" class="box"  onsubmit="return false">
+                <fieldset id="case">
+                    <legend>Vous êtes ? </legend>
+                    <input type="checkbox" name="al3" id="al3">
+                    <label for="al3">Ancien L3 étant allé à Montréal</label>
+                    <input type="checkbox" name="hab" id="hab">
+                    <label for="hab">Habitant de Montréal</label>
+                    <input type="checkbox" name="jam" id="jam">
+                    <label for="jam">Jamais parti à Montréal</label>
+                    <input type="checkbox" name="vac" id="vac">
+                    <label for="vac">Parti en vacances à Montréal</label>
+                </fieldset>
+
+                <fieldset id="case">
+                    <legend>Type de bon plan</legend>
+                    <label for="type">Type</label>
+                    <select id="type_">
+                        <option value="">--Veuillez choisir la catégorie--</option>
+                        <option value="bar">Bar / Boite de nuit</option>
+                        <option value="restau">Restaurant</option>
+                        <option value="acti">Activité</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset id="case">
+                    <legend>Adresse</legend>
+                    <label for="num">Numéro</label>
+                    <input type="number" name="num" id="num"  min=1 max=9999>
+                    <label for="rue">Rue/Avenue</label>
+                    <input type="text" name="rue" id="rue">
+                    <label for="cp">Code Postal</label>
+                    <input type="number" value=11290  max=100000 min=1 name="cp" id="cp">
+                </fieldset>
+
+                <fieldset id="case">
+                    <legend>D'où connaissez-vous ?</legend>
+                    <label for="aller">Proposition</label>
+                    <select id="qui">
+                        <option value="">--Veuillez choisir la catégorie--</option>
+                        <option value="vous">Vous y êtes allé</option>
+                        <option value="ami">Un ami vous en a parlé</option>
+                        <option value="net">Vu sur internet</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset id="case">
+                    <legend>Combien vous mettez ?</legend>
+                    <label for="note">Note sur 10</label>
+                    <input type="number" name="notes" min=0 max=10 value=10 id="notes">
+                </fieldset>
+
+                <fieldset id="case">
+                    <legend>Ajouter à votre liste</legend>
+                    <button class="btn_ajout" type="submit" value="Ajouter" onclick="ajout()">Ajouter</button>
+                    <label for="note"><br>Tout supprimer :</label>
+                    <button class="btn_suppr" type="reset" value="Supprimer" onclick="supprimer(0)">Supprimer</button>
+                </fieldset> 
+
+            </form>
+
+        </section>
+        
+        <section>
+            <table id="tabi" class="Table">
+              <h2>Ton formulaire</h2>
+              <thead id="tab">
+                  <tr>
+                      <th>Vous</th>
+                      <th>Type</th>
+                      <th>Numéro</th>
+                      <th>Rue/Avenue</th>
+                      <th>Code Postal</th>
+                      <th>Par qui</th>
+                      <th>Note</th>
+                      <th>Supprimer</th>                      
+                  </tr>
+
+              </thead>
+
+            </table>
+
+        </section>
+
+        <footer>
+            <a href="https://www.mtl.org/fr" id="foot">Office de tourisme</a>
+            <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/visiter-canada/au-sujet-visa-visiteur.html" id="foot">Visa</a>
+            <a href="https://www.evomontreal.com/fr/home/" id="foot">Résidence</a>
+            <a href="https://www.concordia.ca/" id="foot">Ecole Concordia</a>
+        </footer>
+
+    </body>
+
+</html>

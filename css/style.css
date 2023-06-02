@@ -1,0 +1,175 @@
+html{
+    background-color: grey;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium';   
+}
+
+header{
+    text-align: center;
+    background-color: red;
+    background-image: url(../img/Canada-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 35%;
+}
+
+footer{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin:0;
+}
+
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+body,h1{
+    margin: 0%;
+}
+
+
+
+/*------------------------------Commun-------------------------------------*/
+.para_txt{
+    text-align: center;
+    margin-left: 5%;
+}
+
+.para_img{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    margin-left: 30%;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+/*------------------------------Activité-----------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+/*------------------------------Bar/Boite----------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+/*------------------------------Restaurant---------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+/*------------------------------Le formulaire------------------------------*/
+
+/*Le formulaire*/
+#contenu{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+    border:1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(157, 71, 71);
+}
+#tabi{
+    text-align: center;
+    color:rgb(3, 0, 0);
+    font-size: medium;
+    margin:auto;
+    align-items: space-between;
+    
+}
+
+#case{
+    border-color: black;
+}
+
+legend{
+    font-size: large;
+}
+/*-------------*/
+
+/*Le tableau des lignes*/
+
+.Table {
+    background-color: #EEEEEE;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    height: 200%;
+}
+
+.Table td, th {
+    border: 1px solid #AAAAAA;
+}
+
+.Table tr:nth-child(even) {
+    background: rgb(205, 205, 205);
+}
+
+.Table tr:first-child{
+    background-color: rgb(118, 48, 48);
+}
+
+.Table thead {
+    background: #980606cc;
+    border-bottom: 2px solid #444444;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/*---------------------*/
+
+/*les boutons ajouter et supprimer du formulaire*/
+
+.btn_ajout {
+    background-color: green;
+    color : white;
+    border:grey;
+    font-weight: bold;
+   }
+
+.btn_suppr{
+    background-color: red;
+    color : white;
+    border: grey;
+    font-weight: bold;
+}
+
+.btn_ligne{
+    background-color: orange;
+    color : white;
+    border: black;
+    font-weight: bold;
+}
+   
+/*----------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------Navigation entre les pages et lien cliquable------------------------*/
+
+#lien{ 
+    border: transparent;
+    background-color: grey;
+    color:rgb(177, 3, 177);
+}
+
+#foot{
+    color: rgb(233, 114, 71);
+    border: transparent;
+    background-color: grey;
+}
+
+/*--------------------------------------------------------------------------------------------*/
