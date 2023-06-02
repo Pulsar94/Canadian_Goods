@@ -34,33 +34,105 @@ body,h1{
 
 
 /*------------------------------Commun-------------------------------------*/
-.para_txt{
-    text-align: center;
-    margin-left: 5%;
-}
 
-.para_img{
-    text-align: center;
-    flex-direction: row;
-    display: flex;
-    margin-left: 30%;
-}
 
 /*-------------------------------------------------------------------------*/
 
 
 
 /*------------------------------Activité-----------------------------------*/
+.para_tot_act{
+    text-align: center;
+    margin:2%; 
+}
 
+
+.para_img_act{
+    
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img_act{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+#para1_act{
+    max-width: fit-content;
+    padding-left: 10%;
+}
+#para2_act{
+    max-width: max-content;
+    padding-left: 10%;
+}
 
 /*-------------------------------------------------------------------------*/
+
+
+
+
+
+
 /*------------------------------Bar/Boite----------------------------------*/
 
 
+.para_tot_bar{
+    text-align: center;
+    margin:2%;  
+}
+
+
+.para_img_bar{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding-left:32%;
+    padding-right: 32%;
+}
+
+.img_bar{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
 /*-------------------------------------------------------------------------*/
+
+
+
+
+
 
 /*------------------------------Restaurant---------------------------------*/
 
+.para_tot_rest{
+    text-align: center;
+    margin:2%;  
+}
+
+
+.para_img_rest{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding-left:32%;
+    padding-right: 32%;
+}
+
+.img_rest{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
 
 /*-------------------------------------------------------------------------*/
 
