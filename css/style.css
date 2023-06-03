@@ -12,6 +12,8 @@ header, footer{
     background-repeat: no-repeat;
     background-position: 0% 35%;
     margin-bottom: 1%;
+    
+    
 }
 
 footer{
@@ -25,37 +27,47 @@ footer{
 h2{
     text-decoration: underline;
     text-align: center;
+    color: black;
 }
 
-body,h1{
+h1{
+    color: purple;
+    border: solid 1px black;
+    width: 20%;
+    margin-left: 40%;
+    
+    text-align: center;
+    background-color: rgb(86, 199, 120);
+}
+
+body{
     margin: 0%;
 }
 
 
 
-/*------------------------------Commun-------------------------------------*/
-
-
-/*-------------------------------------------------------------------------*/
-
-
+#contour{
+    border: 1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    background-color: #915454;
+}
 
 /*------------------------------Activité-----------------------------------*/
 .para_tot_act{
     text-align: center;
-    margin:2%; 
+    margin:auto;
+    margin-bottom:2%;
+    width: 60%; 
 }
 
-
 .para_img_act{
-    
     flex-direction: row;
     display: flex;
     align-items: center;
-    
 }
 
-.img_act{
+.img_bar_act{
     padding-left: 2%;
     padding-right: 2%;
     padding-top:2%;
@@ -67,7 +79,7 @@ body,h1{
     padding-left: 10%;
 }
 #para2_act{
-    max-width: max-content;
+    max-width: fit-content;
     padding-left: 10%;
 }
 
@@ -75,26 +87,23 @@ body,h1{
 
 
 
-
-
-
 /*------------------------------Bar/Boite----------------------------------*/
-
-
 .para_tot_bar{
     text-align: center;
-    margin:2%;  
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 40%; 
+    margin: auto;
+    margin-bottom: 2%;
 }
 
 
 .para_img_bar{
-    text-align: center;
     flex-direction: row;
     display: flex;
-    align-items: center;
-    padding-left:32%;
-    padding-right: 32%;
+    align-items:center;
 }
+
 
 .img_bar{
     padding-left: 10%;
@@ -103,10 +112,8 @@ body,h1{
     padding-bottom: 2%;
 }
 
+
 /*-------------------------------------------------------------------------*/
-
-
-
 
 
 
@@ -114,7 +121,9 @@ body,h1{
 
 .para_tot_rest{
     text-align: center;
-    margin:2%;  
+    margin:auto;
+    margin-bottom: 2%; 
+    width: 40%;
 }
 
 
@@ -123,8 +132,8 @@ body,h1{
     flex-direction: row;
     display: flex;
     align-items: center;
-    padding-left:32%;
-    padding-right: 32%;
+    padding-left:3%;
+    padding-right: 3%;
 }
 
 .img_rest{
@@ -244,7 +253,7 @@ legend{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 1%;
-    background-color: rgb(214, 140, 140);
+    background-color: rgb(155, 91, 91);
 }
 
 /*---------------------------------------------------------------------*/
@@ -276,4 +285,3 @@ legend{
 }
 
 /*--------------------------------------------------------------------------------------------*/
-
