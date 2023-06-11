@@ -8,20 +8,23 @@
         <script type="text/javascript" src="../js/script.js"></script>
     </head>
 
-    <header>
-        <h1>Ajouter quelque chose ?</h1>
-        <div id="lien">
-            <a href="./accueil.html">Accueil</a>
-            <a href="./bar.html">Bars</a>
-            <a href="./restaurant.html">Restaurants</a>
-            <a href="./activite.html">Activités</a>
-        </div>
-        
-    </header>
+    
 
     <body>
+
+        <header>
+            <h1>Ajouter quelque chose ?</h1>
+            <div id="lien">
+                <a href="./accueil.html">Accueil</a>
+                <a href="./bar.html">Bars</a>
+                <a href="./restaurant.html">Restaurants</a>
+                <a href="./activite.html">Activités</a>
+            </div>
+        </header>
+
         <h2>Remplissez le formulaire !</h2>
-        <section id="contenu">
+
+        <div id="contenu">
             <form method="post" name="formu" id="form" action="#" class="box"  onsubmit="return false">
                 
                 <fieldset id="case">
@@ -38,7 +41,7 @@
 
                 <fieldset id="case">
                     <legend>Type de bon plan</legend>
-                    <label for="type">Type</label>
+                    <label id="type">Type</label>
                     <select id="type_">
                         <option value="">--Veuillez choisir la catégorie--</option>
                         <option value="bar">Bar / Boite de nuit</option>
@@ -60,7 +63,7 @@
 
                 <fieldset id="case">
                     <legend>D'où connaissez-vous ?</legend>
-                    <label for="aller">Proposition</label>
+                    <label id="aller">Proposition</label>
                     <select id="qui">
                         <option value="">--Veuillez choisir la catégorie--</option>
                         <option value="vous">Vous y êtes allé</option>
@@ -72,24 +75,25 @@
 
                 <fieldset id="case">
                     <legend>Combien vous mettez ?</legend>
-                    <label for="note">Note sur 10</label>
+                    <label id="note">Note sur 10</label>
                     <input type="number" name="notes" min=0 max=10 value=10 id="notes">
                 </fieldset>
 
                 <fieldset id="case">
                     <legend>Ajouter à votre liste</legend>
                     <button class="btn_ajout" type="submit" value="Ajouter" onclick="ajout()">Ajouter</button>
-                    <label for="note"><br>Tout supprimer :</label>
+                    <label id="note"><br>Tout supprimer :</label>
                     <button class="btn_suppr" type="reset" value="Supprimer" onclick="supprimer(0)">Supprimer</button>
                 </fieldset> 
 
             </form>
 
-        </section>
+        </div>
         
-        <section id="footer_formulaire">
+        <div id="footer_formulaire">
+            <h2>Ton formulaire</h2>
             <table id="tabi" class="Table">
-              <h2>Ton formulaire</h2>
+              
               <thead id="tab">
                   <tr>
                       <th>Vous</th>
@@ -105,8 +109,7 @@
               </thead>
 
             </table>
-
-        </section>
+        </div>
 
         <footer>
             <div id="foot">
