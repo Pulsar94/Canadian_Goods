@@ -24,18 +24,17 @@ footer{
 }
 
 
-
 h1{
+   
+    margin-top:0%;
+    margin-bottom:6%;
     color: rgb(2, 0, 2);
     border: solid 1px black;
     background-color: #915454;
-
-
-    min-width: fit-content;
-    min-height: fit-content;
-    
+    padding:0%;
+    width: 20%;
+    margin-left:40%;
     text-align: center;
-    
 }
 
 h2{
@@ -59,13 +58,15 @@ h2{
     text-align: center;
     margin:auto;
     margin-bottom:2%;
-    width: 60%; 
+    width: fit-content; 
+    
 }
 
 .para_img_act{
     flex-direction: row;
     display: flex;
     align-items: center;
+    
 }
 
 .img_bar_act{
