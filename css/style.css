@@ -5,9 +5,15 @@ html{
 }
 body{
     margin: 0%;
+    position: relative;
+    padding-bottom: 1%;
 }
 
-header, footer{
+#footer_formulaire{
+    padding-bottom: 3%;
+}
+
+header{
     text-align: center;
     background-image: url(../img/Canada-2.jpg);
     background-size: cover;
@@ -17,10 +23,15 @@ header, footer{
 }
 
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    margin:0;
+    text-align: center;
+    background-image: url(../img/Canada-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 35%;
+    margin-top: 100%;
 }
 
 
