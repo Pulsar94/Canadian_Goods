@@ -1,49 +1,48 @@
 html{
     background-color: grey;
     color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium';   
+    font-family: 'Franklin Gothic Medium';
+}
+body{
+    margin: 0%;
 }
 
 header, footer{
     text-align: center;
-    background-color: red;
     background-image: url(../img/Canada-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 35%;
     margin-bottom: 1%;
-    
-    
 }
 
 footer{
-    text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin:0;
 }
 
-h2{
-    text-decoration: underline;
-    text-align: center;
-    color: black;
-}
+
 
 h1{
-    color: purple;
+    color: rgb(2, 0, 2);
     border: solid 1px black;
-    width: 20%;
-    margin-left: 40%;
+    background-color: #915454;
+
+
+    min-width: fit-content;
+    min-height: fit-content;
     
     text-align: center;
-    background-color: rgb(86, 199, 120);
+    
 }
 
-body{
-    margin: 0%;
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color:black;
 }
-
 
 
 #contour{
@@ -51,6 +50,8 @@ body{
     border-color: black;
     border-radius: 30px;
     background-color: #915454;
+    min-width: fit-content;
+    min-height: fit-content;
 }
 
 /*------------------------------Activité-----------------------------------*/
@@ -76,11 +77,13 @@ body{
 
 #para1_act{
     max-width: fit-content;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 #para2_act{
     max-width: fit-content;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /*-------------------------------------------------------------------------*/
@@ -102,6 +105,7 @@ body{
     flex-direction: row;
     display: flex;
     align-items:center;
+   
 }
 
 
@@ -160,7 +164,7 @@ body{
     padding-top: 20px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: rgb(157, 71, 71);
+    background-color: #915454;
 }
 #tabi{
     text-align: center;
@@ -199,7 +203,7 @@ legend{
 }
 
 .Table tr:first-child{
-    background-color: rgb(118, 48, 48);
+    background-color: rgb(116, 57, 57);
 }
 
 .Table thead {
@@ -237,7 +241,7 @@ legend{
    
 /*-------------------------------------------------------------------------------------------------------------------*/
 
-/*------------------------CSS pour page accueil------------------------*/
+/*------------------------Accueil------------------------*/
 
 #info_presentation, #apropos{
     text-align: center;
@@ -262,26 +266,26 @@ legend{
 
 #lien a{ 
     border: solid 1px black;
-    background-color: rgb(86, 199, 120);
-    color:rgb(177, 3, 177);
+    background-color: #ffffff;
+    color:rgb(255, 0, 0);
     transition: all 1s;
 }
 
 #lien :hover{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
 }
 
 #foot a{
     border: solid 1px black;
-    color: rgb(226, 95, 47);
-    background-color: rgb(86, 199, 120);
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     transition: all 1s;
 }
 
 #foot :hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: rgb(248, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 /*--------------------------------------------------------------------------------------------*/
