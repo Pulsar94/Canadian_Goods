@@ -260,6 +260,31 @@ legend{
     background-color: rgb(155, 91, 91);
 }
 
+.para_tot_accueil{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 40%; 
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+
+.para_accueil{
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+   
+}
+
+
+.img_accueil{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
 /*---------------------------------------------------------------------*/
 
 /*------------------------Navigation entre les pages et lien cliquable------------------------*/
@@ -289,3 +314,33 @@ legend{
 }
 
 /*--------------------------------------------------------------------------------------------*/
+
+/*----------------------- A propos ------------------------------*/
+
+.para_tot_propos{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 40%; 
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+
+.para_apropos{
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+   
+}
+
+
+.img_propos{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+
+/*---------------------------------------------------------------*/
