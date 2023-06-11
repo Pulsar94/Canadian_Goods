@@ -1,0 +1,347 @@
+html{
+    background-color: grey;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium';
+}
+body{
+    margin: 0%;
+}
+
+header, footer{
+    text-align: center;
+    background-image: url(../img/Canada-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 35%;
+    margin-bottom: 1%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin:0;
+}
+
+
+h1{
+   
+    margin-top:0%;
+    margin-bottom:6%;
+    color: rgb(2, 0, 2);
+    border: solid 1px black;
+    background-color: #915454;
+    padding:0%;
+    width: 20%;
+    margin-left:40%;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color:black;
+}
+
+
+#contour{
+    border: 1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    background-color: #915454;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+/*------------------------------Activité-----------------------------------*/
+.para_tot_act{
+    text-align: center;
+    margin:auto;
+    margin-bottom:2%;
+    width: fit-content; 
+    
+}
+
+.para_img_act{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img_bar_act{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+#para1_act{
+    max-width: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#para2_act{
+    max-width: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+/*------------------------------Bar/Boite----------------------------------*/
+.para_tot_bar{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 40%; 
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+
+.para_img_bar{
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+   
+}
+
+
+.img_bar{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+
+/*------------------------------Restaurant---------------------------------*/
+
+.para_tot_rest{
+    text-align: center;
+    margin:auto;
+    margin-bottom: 2%; 
+    width: 40%;
+}
+
+
+.para_img_rest{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding-left:3%;
+    padding-right: 3%;
+}
+
+.img_rest{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+/*-------------------------------------------------------------------------*/
+
+/*------------------------------Le formulaire------------------------------*/
+
+/*Le formulaire*/
+#contenu{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+    border:1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #915454;
+}
+#tabi{
+    text-align: center;
+    color:rgb(3, 0, 0);
+    font-size: medium;
+    margin:auto;
+    align-items: space-between;
+    
+}
+
+#case{
+    border-color: black;
+}
+
+legend{
+    font-size: large;
+}
+/*-------------*/
+
+/*Le tableau des lignes*/
+
+.Table {
+    background-color: #EEEEEE;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    height: 200%;
+}
+
+.Table td, th {
+    border: 1px solid #AAAAAA;
+}
+
+.Table tr:nth-child(even) {
+    background: rgb(205, 205, 205);
+}
+
+.Table tr:first-child{
+    background-color: rgb(116, 57, 57);
+}
+
+.Table thead {
+    background: #980606cc;
+    border-bottom: 2px solid #444444;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/*---------------------*/
+
+/*les boutons ajouter et supprimer du formulaire*/
+
+.btn_ajout {
+    background-color: green;
+    color : white;
+    border:grey;
+    font-weight: bold;
+   }
+
+.btn_suppr{
+    background-color: red;
+    color : white;
+    border: grey;
+    font-weight: bold;
+}
+
+.btn_ligne{
+    background-color: orange;
+    color : white;
+    border: black;
+    font-weight: bold;
+}
+   
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------Accueil------------------------*/
+
+#info_presentation, #apropos{
+    text-align: center;
+    color: rgb(248, 248, 248);
+    
+}
+
+#info_gene, #info_propos{
+    text-align: center;
+    border: 1px solid transparent;
+    border-color: black;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    background-color: rgb(155, 91, 91);
+}
+
+.para_tot_accueil{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 40%; 
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+
+.para_accueil{
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+   
+}
+
+
+.img_accueil{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+/*---------------------------------------------------------------------*/
+
+/*------------------------Navigation entre les pages et lien cliquable------------------------*/
+
+#lien a{ 
+    border: solid 1px black;
+    background-color: #ffffff;
+    color:rgb(255, 0, 0);
+    transition: all 1s;
+}
+
+#lien :hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+#foot a{
+    border: solid 1px black;
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition: all 1s;
+}
+
+#foot :hover{
+    color: rgb(248, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*----------------------- A propos ------------------------------*/
+
+.para_tot_propos{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 40%; 
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+
+.para_apropos{
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+   
+}
+
+
+.img_propos{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+
+
+/*---------------------------------------------------------------*/
